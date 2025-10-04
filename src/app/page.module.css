@@ -9,7 +9,7 @@
 }
 
 .asideContainer {
-    width: 15rem;
+    width: 16rem;
     height: 35rem;
     grid-area: aside;
     box-shadow: 0 0 20px #00000089;
@@ -50,7 +50,7 @@
     border-width: 1px;
 }
 
-.socialMedias > div {
+.socialMedias > div{
     width: 2rem;
     height: 2rem;
     border: #000 solid;
@@ -59,8 +59,8 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    transition: .5s;
 }
 
 .navigator {
@@ -105,13 +105,6 @@
 #contact:hover {
     border-bottom: solid #1500fc;
     color: #1500fc;
-}
-
-.content {
-    width: 50rem;
-    height: 30rem;
-    grid-area: content;
-    box-shadow: 0 0 20px #00000089;
 }
 
 .photo {

@@ -1,13 +1,15 @@
 import styles from "./page.module.css";
-import aboutImage from "../../../assets/do-utilizador.svg";
-import resumeImage from "../../../assets/book-alt.svg";
-import portfolioImage from "../../../assets/foto.svg";
-import contactImage from "../../../assets/marcador.svg";
-import instagramIcon from "../../../assets/instagram.svg";
-import githubIcon from "../../../assets/github.svg";
-import linkedinIcon from "../../../assets/linkedin.svg";
-import myImage from "../../../assets/f8d8a942-8a64-4e31-b305-bbae2f58de16.jpeg";
+import aboutImage from "../../assets/do-utilizador.svg";
+import resumeImage from "../../assets/book-alt.svg";
+import portfolioImage from "../../assets/foto.svg";
+import contactImage from "../../assets/marcador.svg";
+import instagramIcon from "../../assets/instagram.svg";
+import githubIcon from "../../assets/github.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import myImage from "../../assets/f8d8a942-8a64-4e31-b305-bbae2f58de16.jpeg";
 import Image from "next/image";
+import ContentAbout from "./components/ContentAbout";
+import Link from "next/link";
 
 export default function PageResume() {
     return (
@@ -21,9 +23,17 @@ export default function PageResume() {
                         <h3>GABRIEL DINIZ</h3>
                         <h4>Full Stack Developer</h4>
                         <div className={styles.socialMedias}>
-                            <div> <Image src={githubIcon} className={styles.icons} alt="Icon github"/></div>
+                            <div>
+                                <Link href={"https://github.com/GDiniz12"}>
+                                    <Image src={githubIcon} className={styles.icons} alt="Icon github"/>
+                                </Link> 
+                            </div>
                             <div> <Image src={instagramIcon} className={styles.icons} alt="Icon instagram" /></div>
-                            <div> <Image src={linkedinIcon} className={styles.icons} alt="Icon linkedin" /></div>
+                            <div> 
+                                <Link href={"https://www.linkedin.com/in/gabriel-diniz12"}>
+                                    <Image src={linkedinIcon} className={styles.icons} alt="Icon linkedin" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </aside>
@@ -33,7 +43,7 @@ export default function PageResume() {
                     <div> <Image src={portfolioImage} alt="Icon portfolio" className={styles.images} />PORTFOLIO</div>
                     <div id={styles.contact}> <Image src={contactImage} alt="Icon image" className={styles.images}/>CONTACT</div>
                 </div>
-                <div className={styles.content}></div>
+                <ContentAbout />
             </div>
         </>
     );
