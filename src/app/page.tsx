@@ -8,7 +8,7 @@ import githubIcon from "../../assets/github.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import myImage from "../../assets/f8d8a942-8a64-4e31-b305-bbae2f58de16.jpeg";
 import Image from "next/image";
-import ContentAbout from "./components/ContentAbout";
+import ContentAbout from "./components/ContentAbout/ContentAbout";
 import Link from "next/link";
 
 export default function PageResume() {
@@ -21,7 +21,7 @@ export default function PageResume() {
                     </div>
                     <div className={styles.resume}>
                         <h3>GABRIEL DINIZ</h3>
-                        <h4>Full Stack Developer</h4>
+                        <h4>Full-Stack Developer</h4>
                         <div className={styles.socialMedias}>
                             <div>
                                 <Link href={"https://github.com/GDiniz12"}>

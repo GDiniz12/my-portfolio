@@ -1,0 +1,16 @@
+.stacks {
+
+}
+
+.bar {
+    width: 10rem;
+    height: 0.5rem;
+    border: solid #000;
+    border-radius: 50%;
+}
+
+.bar > div {
+    height: 100%;
+    border: solid #000;
+    border-radius: 50%;
+}
