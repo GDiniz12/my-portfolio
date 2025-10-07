@@ -1,3 +1,4 @@
+import CreateStack from "../CreateStack/CreateStack";
 import styles from "./ContentAbout.module.css";
 
 export default function ContentAbout(props: any) {
@@ -15,54 +16,14 @@ export default function ContentAbout(props: any) {
                 </div>
                 <div className={styles.stacks}>
                     <h3>Stacks</h3>
-                    <div className={styles.stackSpecify}>
-                        <h4>React</h4>
-                        <div id={styles.react}>
-                            <div></div>
-                        </div>
-                    </div>
-                <div className={styles.stackSpecify}>
-                    <h4>JavaScript</h4>
-                    <div id={styles.js}>
-                        <div></div>
-                    </div>
-                </div>   
-                <div className={styles.stackSpecify}>
-                    <h4>CSS</h4>
-                    <div id={styles.css}>
-                        <div></div>
-                    </div>
-                </div>     
-                <div className={styles.stackSpecify}>
-                    <h4>NodeJS(Express, Prisma)</h4>
-                    <div id={styles.node}>
-                        <div></div>
-                    </div>
-                </div>  
-                <div className={styles.stackSpecify}>
-                    <h4>Database(MySQL, PostgreSQL)</h4>
-                    <div id={styles.db}>
-                        <div></div>
-                    </div>
-                </div>  
-                <div className={styles.stackSpecify}>
-                    <h4>Python</h4>
-                    <div id={styles.py}>
-                        <div></div>
-                    </div>
-                </div> 
-                <div className={styles.stackSpecify}>
-                    <h4>TypeScript</h4>
-                    <div id={styles.ts}>
-                        <div></div>
-                    </div>
-                </div>  
-                <div className={styles.stackSpecify}>
-                    <h4>NextJS</h4>
-                    <div id={styles.next}>
-                        <div></div>
-                    </div>
-                </div>       
+                    <CreateStack titleStack="React" id="react" percen={65} idBar="reactBar" />
+                    <CreateStack titleStack="JavaScript" id="js" percen={90} idBar="jsBar"/>
+                    <CreateStack titleStack="CSS" id="css" percen={80} idBar="cssBar"/>  
+                    <CreateStack titleStack="NodeJS(Express, Prisma)" id="node" percen={70} idBar="nodeBar"/>
+                    <CreateStack titleStack="Database(MySQL, PostgreSQL)" id="db" percen={60} idBar="dbBar"/>
+                    <CreateStack titleStack="Python" id="py" percen={40} idBar="pyBar"/>
+                    <CreateStack titleStack="TypeScript" id="ts" percen={50} idBar="tsBar"/>
+                    <CreateStack titleStack="NextJS" id="next" percen={30} idBar="nextBar"/>
                 </div>
                 <div className={styles.footer}>
                     <h4>© 2025 - Gabriel Diniz</h4>
