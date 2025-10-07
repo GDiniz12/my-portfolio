@@ -1,0 +1,24 @@
+.resumeContent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.resumeContent > h3 {
+    padding-top: 10px;
+    font-size: 1.05rem;
+    padding-bottom: 10px;
+}
+
+.resumeContent > p {
+    font-weight: 300;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+
+.resumeContent > span {
+    font-weight: 300;
+    font-size: 12px;
+}

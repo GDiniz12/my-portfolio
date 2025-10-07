@@ -1,13 +1,3 @@
-.mainContainer {
-    display: grid;
-    grid-template-areas: 
-        'aside navigator'
-        'aside content'
-    ;
-    gap: 1.5rem;
-    margin: 2rem;
-}
-
 .asideContainer {
     width: 16rem;
     height: 35rem;
@@ -18,11 +8,6 @@
 
 .asideContainer:hover {
     transform: scale(1.05);
-}
-
-.images {
-    width: 11%;
-    height: 100%;
 }
 
 .resume {
@@ -61,50 +46,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-}
-
-.navigator {
-    width: 50rem;
-    height: 4.5rem;
-    border: solid #fff;
-    grid-area: navigator;
-    display: grid;
-    grid-template-columns: 130px 130px 130px 130px;
-    cursor: pointer;
-    box-shadow: 0 0 20px #00000089;
-    transition: all 0.3s ease;
-}
-
-.navigator:hover {
-    transform: scale(1.02);
-}
-
-.navigator > div {
-    border-right: #0000001a solid;
-    border-width: 1px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: .2s;
-}
-
-.navigator > div:hover {
-    border-bottom: solid #1500fc;
-    color: #1500fc;
-}
-
-#contact {
-    border: none;
-}
-
-#contact:hover {
-    border-bottom: solid #1500fc;
-    color: #1500fc;
 }
 
 .photo {

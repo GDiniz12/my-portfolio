@@ -1,0 +1,9 @@
+.mainContainer {
+    display: grid;
+    grid-template-areas: 
+        'aside navigator'
+        'aside content'
+    ;
+    gap: 1.5rem;
+    margin: 2rem;
+}

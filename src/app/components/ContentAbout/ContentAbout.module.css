@@ -1,6 +1,6 @@
 .content {
     width: 50rem;
-    height: auto;
+    height: 50rem;
     grid-area: content;
     box-shadow: 0 0 20px #00000089;
     display: flex;
@@ -20,7 +20,7 @@
     padding: 20px;
 }
 
-.resume {
+.summary {
     width: 100%;
     height: 35%;
     border-bottom: solid #000;
@@ -29,11 +29,11 @@
     border-width: .5px;
 }
 
-.resume > h3{
+.summary > h3{
     padding: 20px;
 }
 
-.resume > p {
+.summary > p {
     padding: 20px;
     margin-top: -10px;
     font-weight: 300;
@@ -54,17 +54,4 @@
 .stacks > h3 {
     padding: 20px;
     grid-area: stack;
-}
-
-.footer {
-    width: 100%;
-    height: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer > h4 {
-    font-weight: 300;
-    font-size: 14px;
 }
