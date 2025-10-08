@@ -12,22 +12,26 @@ export default function Navigator() {
             <div className={styles.navigator}>
                 <div> 
                     <Link href="/">
-                        <Image src={aboutImage} className={styles.images} alt="Icon about" />ABOUT
+                        <Image src={aboutImage} className={styles.images} alt="Icon about" />
+                        <h4>ABOUT</h4>
                     </Link>
                 </div>
                 <div> 
                     <Link href="/resume">
-                        <Image src={resumeImage} alt="Icon resume" className={styles.images}/>RESUME
+                        <Image src={resumeImage} alt="Icon resume" className={styles.images}/>
+                        <h4>RESUME</h4>
                     </Link>
                 </div>
                 <div> 
                     <Link href="/portfolio">
-                        <Image src={portfolioImage} alt="Icon portfolio" className={styles.images} />PORTFOLIO
+                        <Image src={portfolioImage} alt="Icon portfolio" className={styles.images} />
+                        <h4>PORTFOLIO</h4>
                     </Link>
                 </div>
                 <div id={styles.contact}> 
                     <Link href="/contact">
-                        <Image src={contactImage} alt="Icon image" className={styles.images}/>CONTACT
+                        <Image src={contactImage} alt="Icon image" className={styles.images}/>
+                        <h4>CONTACT</h4>
                     </Link>
                 </div>
             </div>

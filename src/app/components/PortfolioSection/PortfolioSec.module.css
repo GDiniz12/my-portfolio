@@ -1,0 +1,73 @@
+.portfolioContainer {
+    width: 15rem;
+    height: 15rem;
+    border: solid transparent;
+    position: relative;
+}
+
+.imgProject {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+}
+
+.descriptionProject {
+    width: 100%;
+    height: 100%;
+    background-color: #00000053;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.descriptionProject > * {
+    margin: 1rem;
+    color: #fff;
+}
+
+.imgGitHub {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid #fff;
+    border-width: .5px;
+    border-radius: 100%;
+}
+
+.image {
+    width: 60%;
+    height: 60%;
+    filter: brightness(0) invert(1);
+    margin: 8px;
+}
+
+.descriptionProject > h3 {
+
+}
+
+.portfolioContainer:hover .descriptionProject {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.imgProject > img {
+    width: 100%;
+    height: 100%;
+}
+
+.projectTitle {
+    width: 100%;
+    height: 20%;
+    background-color: #243C4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.projectTitle > h3 {
+    color: #fff;
+}

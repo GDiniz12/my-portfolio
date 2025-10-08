@@ -27,6 +27,7 @@
     font-weight: 500;
     transition: .2s;
     text-decoration: none;
+    color: #000;
 }
 
 .navigator > div > a:hover {
