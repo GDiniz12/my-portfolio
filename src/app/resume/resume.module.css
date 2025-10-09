@@ -1,6 +1,6 @@
 .content {
     width: 50rem;
-    height: 30rem;
+    height: auto;
     grid-area: content;
     box-shadow: 0 0 20px #00000089;
     display: flex;
@@ -25,4 +25,24 @@
     height: auto;
     border-bottom: solid #000;
     border-width: .5px;
+}
+
+.content > .resumes > button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0c008d;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 100px) and (max-width: 450px) {
+    .content {
+        width: 100%;
+        height: auto;
+    }
 }

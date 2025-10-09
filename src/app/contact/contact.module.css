@@ -1,0 +1,116 @@
+.content {
+    width: 50rem;
+    height: auto;
+    grid-area: content;
+    box-shadow: 0 0 20px #00000089;
+}
+
+.title {
+    width: 100%;
+    height: 15%;
+    border-bottom: solid #000;
+    display: flex;
+    align-items: center;
+    border-width: .5px;
+}
+
+.title > h3 {
+    padding: 20px;
+}
+
+.formAction {
+    width: 100%;
+    margin-left: 5rem;
+}
+
+.containerContact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+    border-bottom: #000 solid;
+    border-width: .5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    justify-content: start;
+}
+
+.info > span {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.formAction > form > label {
+    font-size: 13px;
+}
+
+.formAction > form > input {
+    width: 15rem;
+    height: 1.5rem;
+}
+
+.formAction > form > textarea {
+    width: 70%;
+    height: 5rem;
+}
+
+.formAction > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.formAction > form > button {
+    width: 5rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #0c008d;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 100px) and (max-width: 450px) {
+    .content {
+        width: 100%;
+        height: auto;
+        grid-area: content;
+        box-shadow: 0 0 20px #00000089;
+    }
+
+    .containerContact {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        border-bottom: #000 solid;
+        border-width: .5px;
+    }
+
+    .formAction > form > input {
+        width: 12rem;
+        height: 1.5rem;
+    }
+
+    .formAction > form > textarea {
+        width: 90%;
+        height: 5rem;
+    }
+
+    .formAction {
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .info {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+}

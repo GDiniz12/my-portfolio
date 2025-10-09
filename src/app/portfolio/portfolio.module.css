@@ -25,4 +25,20 @@
     grid-template-columns: 33% 33% 33%;
     padding: 2rem;
     gap: 10px;
+    border-bottom: solid #000;
+    border-width: .5px;
+}
+
+@media (min-width: 100px) and (max-width: 450px) {
+    .content {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

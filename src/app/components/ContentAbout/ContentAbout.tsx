@@ -2,7 +2,7 @@ import CreateStack from "../CreateStack/CreateStack";
 import Footer from "../Footer/Footer";
 import styles from "./ContentAbout.module.css";
 
-export default function ContentAbout(props: any) {
+export default function ContentAbout() {
     return (
         <>
             <div className={styles.content}>

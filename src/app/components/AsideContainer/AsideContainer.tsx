@@ -22,7 +22,11 @@ export default function AsideContainer() {
                             <Image src={githubIcon} className={styles.icons} alt="Icon github"/>
                         </Link> 
                     </div>
-                    <div> <Image src={instagramIcon} className={styles.icons} alt="Icon instagram" /></div>
+                    <div>
+                        <Link href={"https://www.instagram.com/gabrielvmdiniz/"}>
+                            <Image src={instagramIcon} className={styles.icons} alt="Icon instagram" />
+                        </Link>
+                    </div>
                     <div> 
                         <Link href={"https://www.linkedin.com/in/gabriel-diniz12"}>
                             <Image src={linkedinIcon} className={styles.icons} alt="Icon linkedin" />

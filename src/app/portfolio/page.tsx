@@ -1,14 +1,10 @@
 import beyondImage from "../../../assets/beyond.png";
 import CreatePortfolio from "../components/PortfolioSection/PortfolioSec";
 import styles from "./portfolio.module.css";
-import type { Metadata } from "next";
 import acley from "../../../assets/acleyLogo5.png";
 import empathize from "../../../assets/empathizeLogo.png";
+import Footer from "../components/Footer/Footer";
 
-export const metadata: Metadata = {
-  title: "My Portfolio | Gabriel Diniz",
-  description: "This is the portfolio page of Gabriel Diniz's portfolio."
-};
 
 export default function Portfolio() {
     return (
@@ -22,6 +18,7 @@ The Empathize System is a web project developed at FECAP, used to manage the Lid
 Acley is an Anki-inspired app. Review your flashcards and reinforce your knowledge." linkAt="https://github.com/GDiniz12/acley"/>
                     <CreatePortfolio  imgPort={beyondImage} alt="Beyond mars image" titleProject="BEYOND MARS" description="Beyond Mars is a game developed at FECAP" linkAt="https://github.com/GDiniz12/Projeto-1-semestre"/>                    
                 </div>
+                <Footer />
             </div>
         </>
     );
